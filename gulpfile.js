@@ -1,5 +1,4 @@
-var domain = 'customwritingonline.co.uk.local';
-//var domain = 'wp-test';
+var domain = 'wp-test';
 
 //NPM-MODULES
 //--------------------------------------------------
