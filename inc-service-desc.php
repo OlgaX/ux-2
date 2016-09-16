@@ -29,7 +29,7 @@ $additional_services = array(
 	),
 	array (
 		item => "Extra QAD check",
-		price => "9,99"
+		price => "Extra charge"
 	),
 	array (
 		item => "Updates via text messages",
@@ -73,7 +73,7 @@ $additional_services = array(
 							<?php foreach ($additional_services as $k => $item): ?>
 								<li>
 									<span class="service-desc__text"><?php echo $item[item]; ?></span>
-									<span class="service-desc__price"><?php if ($k !== 0) echo '$'; ?><?php echo $item[price]; ?></span>
+									<span class="service-desc__price"><?php if ($k !== 0 && $k !== 4) echo '$'; ?><?php echo $item[price]; ?></span>
 								</li>
 							<?php endforeach; ?>
 						</ul>

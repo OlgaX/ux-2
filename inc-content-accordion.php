@@ -1,6 +1,6 @@
 <?php
 function addAccordion ( $text ){
-	$pattern = '/(<(h[1-6])>[\w\s\/$%#{}[\].:\\@!,+();&<>"\'^*?=~`]*?<\/h[1-6]>)/i';
+	$pattern = '/(<(h[1-6])>[\w\s\/$%#{}[\].:\\@!,+();&<>"\'^*?=~`-]*?<\/h[1-6]>)/i';
 	$result = preg_replace($pattern, "</div><div data-accordion='header' class='content-accordion__header'>$1</div><div data-accordion='body' class='content-accordion__body'>", $text);
 	$pos = strpos($result, '</div>');
 	return substr_replace($result, '', $pos, 6) . '</div>';
