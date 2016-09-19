@@ -23,9 +23,11 @@
 
 							<div class="article-text">
 								<?php the_content(); ?>
-								<div class="big-btn-wrap">
-									<a href="/order" class="btn btn-default big-btn">Order Now</a>
-								</div>
+								<?php if (!is_page(array('prices', 'order', 'preview', 'terms'))) :  ?>
+									<div class="big-btn-wrap">
+										<a href="/order" class="btn btn-default big-btn">Order Now</a>
+									</div>
+								<?php endif; ?>
 							</div>
 
 						<?php endif; ?>
