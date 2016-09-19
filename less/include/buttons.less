@@ -30,9 +30,17 @@
 
 /*BUTTONS: MORE-LINK (modified "big-btn")*/
 .more-btn {
-		padding: 5px 10px;
-		font-size: 16px;
-		min-width: inherit;
+	padding: 5px 10px;
+	font-size: 16px;
+	min-width: inherit;
+	background: @c1;
+	border-color: @c1;
+	color: #fff;
+	&:hover, &:active, &:focus {
+	background: darken(@c1, 5%) !important;
+	border-color: darken(@c1, 5%) !important;
+	color: #fff !important;
+	}
 	&-wrap {
 		text-align: right;
 		line-height: 1;

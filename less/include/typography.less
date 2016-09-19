@@ -1,9 +1,17 @@
 .article {
-	font-size: 18px;
+	font-size: 16px;
 	color: #929292;
 	p, li, blockquote {
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 		text-align: justify;
+	}
+	.big-btn-wrap {
+		margin-top: 50px;;
+		text-align: center;
+	}
+	@media (min-width: @min-sm) {
+		font-size: 18px;
+		p, li, blockquote {margin-bottom: 30px;}
 	}
 }
 
@@ -21,12 +29,21 @@ a {
 .article blockquote {border-color: @c1;}
 
 /*TYPOGRAPHY: HEADERS*/
-h1, .h1 {font-size: 30px;}
-h2, .h2 {font-size: 26px;}
+h1, .h1 {font-size: 26px;}
+h2, .h2 {font-size: 24px;}
 h3, .h3 {font-size: 22px;}
-h4, .h4 {font-size: 18px;}
-h5, .h5 {font-size: 16px;}
-h6, .h6 {font-size: 14px;}
+h4, .h4 {font-size: 20px;}
+h5, .h5 {font-size: 18px;}
+h6, .h6 {font-size: 16px;}
+
+@media (min-width: @min-sm) {
+	h1, .h1 {font-size: 32px;}
+	h2, .h2 {font-size: 28px;}
+	h3, .h3 {font-size: 24px;}
+	h4, .h4 {font-size: 22px;}
+	h5, .h5 {font-size: 20px;}
+	h6, .h6 {font-size: 18px;}
+}
 
 /*TYPOGRAPHY: SECTION TITLE*/
 .section-title {
@@ -76,6 +93,43 @@ h6, .h6 {font-size: 14px;}
 			vertical-align: top;
 			margin-right: 5px;
 			color: @c1;
+		}
+	}
+}
+
+/*TYPOGRAPHY: NUMERIC-LIST*/
+.numeric-list {
+	margin: 0;
+	padding: 0;
+	counter-reset: li;
+	li {
+		list-style-type: none;
+		margin-bottom: 40px;
+		ol, ul {
+			margin: 0 0 0 30px;
+			padding: 0;
+		}
+		&:before {
+			content: counter(li, decimal-leading-zero) '/';
+			counter-increment: li;
+			display: inline-block;
+			color: @c1;
+			font-size: 40px;
+			line-height: 1;
+		}
+		*:first-child {
+			display: inline;
+		}
+		h1, h2, h3, h4, h5, h6,
+		.h1, .h2, .h3, .h4, .h5, .h6 {
+			font-size: 16px;
+			text-transform: uppercase;
+			color: #333;
+		}
+		p {
+			margin: 15px 0;
+			font-size: 14px;
+			color: #929292;
 		}
 	}
 }

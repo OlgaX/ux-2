@@ -23,6 +23,9 @@
 
 							<div class="article-text">
 								<?php the_content(); ?>
+								<div class="big-btn-wrap">
+									<a href="/order" class="btn btn-default big-btn">Order Now</a>
+								</div>
 							</div>
 
 						<?php endif; ?>
