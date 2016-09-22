@@ -97,8 +97,8 @@
 			<?php endforeach; ?>
 			</ul>
 			<div data-rotateslider="nav" class="writers-slider__nav">
-				<span class="writers-slider__arrow writers-slider__arrow-next f_icon-left-open" data-rotateslider="next"></span>
-				<span class="writers-slider__arrow writers-slider__arrow-prev f_icon-right-open" data-rotateslider="prev"></span>
+				<span class="writers-slider__arrow writers-slider__arrow-prev f_icon-left-open" data-rotateslider="prev"></span>
+				<span class="writers-slider__arrow writers-slider__arrow-next f_icon-right-open" data-rotateslider="next"></span>
 			</div>
 		</div>
 	</div>

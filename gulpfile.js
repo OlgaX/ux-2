@@ -35,7 +35,7 @@ gulp.task('img', function() {
 gulp.task('less', function () {
 	gulp.src('./less/style.less')
 	.pipe(plumber())
-	.pipe(sourcemaps.init())
+	//.pipe(sourcemaps.init())
 	.pipe(less())
 	.pipe(autoprefixer({browsers: ['last 50 versions']}))
 	.pipe(cleanCSS({compatibility: 'ie8', keepSpecialComments: 0}))

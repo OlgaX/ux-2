@@ -25,11 +25,11 @@
 		transform: translateY(-50%) translateX(-50%) scale(0.8);
 		transition: all 0.3s ease;
 		&.next {
-			left: 20%;
+			left: 80%;
 			opacity: 0.5;
 		}
 		&.prev {
-			left: 80%;
+			left: 20%;
 			opacity: 0.5;
 		}
 		&.now {
@@ -69,8 +69,8 @@
 		color: #fff;
 		cursor: pointer;
 		z-index: 1;
-		&-next {left: -10px;}
-		&-prev {right: -10px;}
+		&-next {right: -10px;}
+		&-prev {left: -10px;}
 		&:hover {color: @c2}
 	}
 	@media (min-width: @min-xs) {
